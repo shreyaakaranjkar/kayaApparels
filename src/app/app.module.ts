@@ -7,7 +7,7 @@ import { DashboardComponent } from './shared/components/dashboard/dashboard.comp
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/components/material/material/material.module';
-
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,8 @@ import { MaterialModule } from './shared/components/material/material/material.m
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

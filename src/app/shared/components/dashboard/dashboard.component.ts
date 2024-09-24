@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AllClothingService } from '../../services/allClothingService.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private clothingServ : AllClothingService) { }
 
+  allClothingImg! : Array<any>
   ngOnInit(): void {
+
+   this.clothingServ.getDashboardImages().subscribe(res => {
+    console.log(res)
+    this.allClothingImg = res;
+   })
   }
 
 }

@@ -1,1 +1,4 @@
-<p>dashboard works!</p>
+<div *ngFor="let i of allClothingImg">
+    <img [src]='i.imgUrl' alt="" height="200px" width="300px">
+    {{i | json}}
+</div>

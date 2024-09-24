@@ -1,0 +1,20 @@
+{
+    "posts": [
+        {
+            "name" : "John Doe",
+            "comments": "Very Good App For All Family SHopping",
+            "id" : "101"
+        }
+    ],
+    "dashboard" : [
+        {
+            "imgUrl" : "https://unsplash.com/photos/woman-wearing-white-dress-YY1FMC2xRf4?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
+        },
+        {
+            "imgUrl" : "https://unsplash.com/photos/woman-wearing-white-dress-YY1FMC2xRf4?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
+        },
+        {
+            "imgUrl" : "https://unsplash.com/photos/selective-focus-photography-of-hanged-clothes-vB5qtt8X4NA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
+        }
+    ]
+}
