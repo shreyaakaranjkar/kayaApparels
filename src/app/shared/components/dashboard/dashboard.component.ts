@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AllClothingService } from '../../services/allClothingService.service';
+import { Dashboard } from '../../interface/host';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,8 +13,7 @@ export class DashboardComponent implements OnInit {
 
   allClothingImg! : Array<any>
   ngOnInit(): void {
-
-   this.clothingServ.getDashboardImages().subscribe(res => {
+   this.clothingServ.getDashboardImages().subscribe((res:any)=> {
     console.log(res)
     this.allClothingImg = res;
    })

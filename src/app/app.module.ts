@@ -7,12 +7,14 @@ import { DashboardComponent } from './shared/components/dashboard/dashboard.comp
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/components/material/material/material.module';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { NavbarcompComponent } from './shared/components/navbarcomp/navbarcomp.component'
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarcompComponent
   ],
   imports: [
     BrowserModule,
