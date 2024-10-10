@@ -1,7 +1,10 @@
-<mat-paginator [length]="100"
-              [pageSize]="10"
-              [pageSizeOptions]="[5, 10, 25, 100]"
-              aria-label="Select page">
-</mat-paginator>
+<app-navbarcomp *ngIf="isloginusers"></app-navbarcomp>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        
+    <router-outlet></router-outlet>
+      </div>
+    </div>
+    </div> 
 
-<app-dashboard></app-dashboard>

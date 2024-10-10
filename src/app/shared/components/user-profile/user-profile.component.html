@@ -1,0 +1,26 @@
+
+
+<div class="row">
+    <div class="col-md-4">
+        <mat-card *ngIf="singleuser">
+            <mat-card-header>
+                <div class="text-center text-bold" >
+                <h1>welcome {{singleuser.username}}</h1></div>
+            </mat-card-header>
+            <mat-card-content>
+            <p>{{singleuser.contact}}</p>
+            <p>{{singleuser.gmail}}</p>
+            </mat-card-content>
+            <mat-card-footer>
+                <p>{{singleuser.securityq}}</p>
+            </mat-card-footer>
+            
+            </mat-card>
+    </div>
+    <div class="col-md-8">
+        <app-product></app-product>
+    </div>
+</div>
+
+
+

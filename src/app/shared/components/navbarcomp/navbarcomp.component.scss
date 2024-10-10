@@ -1,0 +1,45 @@
+
+.amezonnav{
+    background-color: rgba(134, 109, 225, 0.804)!important;
+    }
+    .amezonnav .navbar-nav .active>.nav-link,
+    .amezonnav .navbar-nav .nav-link:active,
+    .amezonnav .navbar-nav .nav-link.show,
+    .amezonnav .navbar-nav .show>.nav-link,
+    .amezonnav .navbar-nav .nav-link:focus,
+    .amezonnav .navbar-nav .nav-link:hover{
+    background-color: rgb(43, 226, 134);
+    color: dark;
+    height: 40px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #e9ecef;
+        font-size: 20px;
+    }
+    img {
+        width: 97px;
+    }
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.amezonnav {
+        height: 10px;
+        color: rgb(19, 18, 18) !important;
+    }
+    .amezonnav.navbar-nav.nav-link{
+        height: 2rem;
+        line-height: 2rem;
+        padding: 0 1rem;
+       
+    }
+    a.nav-link {
+        margin: 20px;
+        color: rgb(12, 11, 11);
+    }
+    
+
+
+
+@media all and (max-width:750px){
+    .nav-item{
+        margin-top:20px;
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg bg-light " id="navs">
+    <a></a>
+    <button class="navbar-toggler btn btn-primary"  id="btntoggle" (click)="onclick(opendiv)" type="button" data-toggle="#navbarNav" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars text-white"  id="hide"></i>
+                 
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" #opendiv id="navbarNav">
+      <ul class="navbar-nav ml-auto text-uppercase" id="ullist">
+        <ng-container *ngIf="getuserrole.includes('User') ||getuserrole.includes('Admin')">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link"  (click)="onclicklist()" routerLink="dashboard">home</a>
+        </li>
+      </ng-container>
+       <ng-container *ngIf="getuserrole.includes('User') ||getuserrole.includes('Admin')">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" (click)="onclicklist()" routerLink="User">User</a>
+        </li>
+       </ng-container>
+       <ng-container *ngIf="getuserrole.includes('Sellar') ||getuserrole.includes('Admin')">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link"  (click)="onclicklist()" routerLink="Sellar">Sellar</a>
+        </li></ng-container>
+        <ng-container *ngIf="getuserrole.includes('Admin')">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" (click)="onclicklist()" routerLink="Admin">Admin</a>
+        </li>
+      </ng-container>
+      </ul>
+    </div>
+  </nav>
+  
