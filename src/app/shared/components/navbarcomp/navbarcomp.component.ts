@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarcompComponent implements OnInit {
   component :boolean=true
+  getuserrole!:string
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.getuserrole=localStorage.getItem("userrole")!
   }
   
   onclick(ele:any){

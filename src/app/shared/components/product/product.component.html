@@ -1,0 +1,23 @@
+<mat-form-field>
+    <mat-label>filter</mat-label>
+    <input matInput placeholder="filter" (keyup)="formfilter($event)">
+</mat-form-field>
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 my-3" *ngFor="let p of allproducts">
+        <mat-card class=" mat-elevation-z20 text-center" style="height:500px">
+
+            <img mat-card-image [src]="p.image" class="productimg" alt="p.image">
+            <mat-card-content style="height: 60px; overflow: hidden;">
+                
+                    {{p.description ||p.title}}
+                
+                <p>{{p.createdAt}}</p>
+
+            </mat-card-content>
+            <mat-card-footer>
+<p class="my-2"><button mat-raised-button color="primary" type="button" [routerLink]="[p._id]" (click)="travel()">view more..</button></p>
+            </mat-card-footer>
+
+        </mat-card>
+    </div>
+</div>

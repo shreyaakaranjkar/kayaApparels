@@ -33,7 +33,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "bootstrap/dist/js/bootstrap.min.js"
+              
             ]
           },
           "configurations": {
